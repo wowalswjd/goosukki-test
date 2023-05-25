@@ -1,1 +1,0 @@
-# goosukki-test
