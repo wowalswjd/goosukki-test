@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "927481093718",
+    "project_id": "goosukki-310de",
+    "storage_bucket": "goosukki-310de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927481093718:android:ae24884d182c7165f965f7",
+        "android_client_info": {
+          "package_name": "capstone.part1.goosukki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927481093718-92s01qkeur6s4q2i0jrtn3qs4rdqrkbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkFUdVnOtVPn3taNL1RIMSQki0ABGokBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927481093718-92s01qkeur6s4q2i0jrtn3qs4rdqrkbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

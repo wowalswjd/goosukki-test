@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/joinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 정보를 입력해주세요."
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--닉네임-->
+    <EditText
+        android:id="@+id/nicknameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="닉네임"
+        android:backgroundTint="@color/light_gray"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintTop_toBottomOf="@id/joinTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/duplicateNicknameCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중복확인"
+        app:layout_constraintTop_toTopOf="@id/nicknameEditText"
+        app:layout_constraintBottom_toBottomOf="@id/nicknameEditText"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText" />
+
+    <ImageView
+        android:id="@+id/completeCheckNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_check_24"
+        android:visibility="gone"
+        app:tint="@color/nct"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/nicknameEditText"
+        app:layout_constraintBottom_toBottomOf="@id/nicknameEditText"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText" />
+
+    <!--아이디-->
+    <EditText
+        android:id="@+id/idEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:backgroundTint="@color/light_gray"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/nicknameEditText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/duplicateIdCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중복확인"
+        app:layout_constraintTop_toTopOf="@id/idEditText"
+        app:layout_constraintBottom_toBottomOf="@id/idEditText"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText" />
+
+    <ImageView
+        android:id="@+id/completeCheckId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_check_24"
+        android:visibility="gone"
+        app:tint="@color/nct"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/idEditText"
+        app:layout_constraintBottom_toBottomOf="@id/idEditText"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="비밀번호"
+        android:backgroundTint="@color/light_gray"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/idEditText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/checkPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/light_gray"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/isPasswordCheckedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_24"
+        app:tint="@color/red"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/checkPasswordEditText"
+        app:layout_constraintBottom_toBottomOf="@id/checkPasswordEditText"
+        app:layout_constraintEnd_toEndOf="@id/checkPasswordEditText" />
+
+    <Button
+        android:id="@+id/goToMainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MainActivity로 이동"
+        app:layout_constraintTop_toBottomOf="@id/checkPasswordEditText"
+        app:layout_constraintBottom_toTopOf="@id/submitInfoBtn"
+        app:layout_constraintStart_toStartOf="@id/checkPasswordEditText" />
+
+    <Button
+        android:id="@+id/submitInfoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제출"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:enabled="false"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
